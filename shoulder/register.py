@@ -25,7 +25,7 @@ class Register(object):
     def __init__(self):
         self.name = None
         self.long_name = None
-        self.access_mnemonic = None
+        self.access_attributes = None
         self.purpose = None
         self.size = None
         self.offset = None
@@ -49,7 +49,7 @@ class Register(object):
     def is_valid(self):
         if self.name is None: return False
         if self.long_name is None: return False
-        if self.access_mnemonic is None: return False
+        if self.access_attributes is None: return False
         if self.size is None: return False
         if self.purpose is None: return False
         for fs in self.fieldsets:

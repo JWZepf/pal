@@ -25,6 +25,7 @@ import pkgutil
 
 from shoulder.logger import logger
 from shoulder.config import config
+from shoulder.access_attributes import AccessAttributes
 
 import shoulder.filters
 import shoulder.gadget
